@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        #ksi{
+            float:right;
+        }
+        .poem{
+            background-color: aqua;
+            overflow: hidden;
+        }
+
+        
+    </style>
+
+</head>
+<body>
+    <h1>float 속성</h1>
+    <div class="poem">
+        <div class="wrap_img">
+        <img id="ksi" src="http://ojsfile.ohmynews.com/STD_IMG_FILE/2012/1201/IE001522943_STD.jpg" alt="김승일"> 
+        </div>
+        <pre>
+            나의 자랑 이랑 / 김승일
+            
+            너와 나는 여섯 종류로
+            인간들을 분류했지
+            선한 사람, 악한 사람......
+            대단한 발견을 한 것 같아
+            막 박수 치면서,
+            네가 나를 선한 사람에
+            끼워주기를 바랐지만.
+            막상 네가 나더러 선한 사람이라고 했을 때. 나는 다른 게 되고 싶었어. 이를테면
+            너를 자랑으로 생각하는 사람.
+            나로 인해서,
+            너는 누군가의 자랑이 되고
+            어느 날 네가 또 슬피 울 때, 네가 기억하기를
+            네가 나의 자랑이란걸
+            기억력이 좋은 네가 기억하기를,
+            바라면서 나는 얼쩡거렸지.
+        </pre>
+   
+        <pre>
+            나의 자랑 이랑 / 김승일
+            
+            너와 나는 여섯 종류로
+            인간들을 분류했지
+            선한 사람, 악한 사람......
+            대단한 발견을 한 것 같아
+            막 박수 치면서,
+            네가 나를 선한 사람에
+            끼워주기를 바랐지만.
+            막상 네가 나더러 선한 사람이라고 했을 때. 나는 다른 게 되고 싶었어. 이를테면
+            너를 자랑으로 생각하는 사람.
+            나로 인해서,
+            너는 누군가의 자랑이 되고
+            어느 날 네가 또 슬피 울 때, 네가 기억하기를
+            네가 나의 자랑이란걸
+            기억력이 좋은 네가 기억하기를,
+            바라면서 나는 얼쩡거렸지.
+        </pre>
+    </div>
+
+    <pre>
+        float이 지정된 요소는 normal-flow에서 제외되기 때문에 다른 요소들이 float이 지정된 요소의 높이를 알 수 없다.
+        이런 문제를 해결하기 위해서는 float의 선조 요소들 중 하나를 bfc로 만들어주면 된다.
+
+        bfc : 블록서식맥락
+        bfc인 요소는 플로팅 요소의 상호작용 범위를 결정해야하기 때문에 float이 적용된 요소의 높이를 알고 있다.
+        따라서 만약 bcf인 요소의 후손 요소 중 float이 지정된 요소가 가장 높이가 크다면,
+        bfc인 요소의 높이는 float된 요소의 높이를 따라가게 된다.
+    
+        * bfc 요소의 종류 *
+         
+    </pre>
+</body>
+</html>

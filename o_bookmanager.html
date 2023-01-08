@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>book manager</title>
+    <link href="./resources/css/reset.css" rel="stylesheet">
+    <link href="./resources/css/common.css" rel="stylesheet">
+    <link href="./resources/css/bookmanager.css" rel="stylesheet">
+
+    <link href="./resources/icon/css/fontawesome.css" rel="stylesheet">
+    <link href="./resources/icon/css/brands.css" rel="stylesheet">
+    <link href="./resources/icon/css/solid.css" rel="stylesheet">
+    <style>
+       div{
+        box-shadow: 0 0 0 1px lightgray inset;
+       }
+
+
+    </style>
+
+    <!--
+        BEM 명명규칙
+        Block           : 기능적으로 독립적인 페이지 구성요소
+                        ex) header, user, search
+        Element         : block을 구성하는 요소
+                        ex) input, btn, img, item
+        Modifier        : block의 상태
+                        ex) blue, bold, cheched, selected...
+        
+        *Block과 Element는 다른 Block이나 Element를 포함할 수 있다.
+        *Block과 Element는 _로 연결, Element와 Modifire는 --
+            ex) main_inp--focus
+
+   
+    -->
+</head>
+<body>
+    
+    <div class="header">
+        <div class="logo row">
+            <span class="font-tit">MC</span>
+        </div>
+         <div class="user row"> 
+            <a>sing up</a>
+            <a>sing in</a>
+        </div>
+    </div>
+   
+    <div clas="section">
+        <div class="aside snb col">
+            <div class="snb row">
+                <span class="font-xl--b">MENU</span>
+            </div>
+            <div class="snb__items col">
+                <div class="snb__item col">
+                    <i class="fas fa-search "></i>
+                    <span>search</span>
+                </div>
+                
+                <div class="snb__item col">
+                    <i class="fas fa-cart-plus "></i>
+                    <span>cart</span>
+                </div>
+               
+                <div class="snb__item col">
+                    <i class="far fa-clipboard "></i>
+                    <span>notice</span>
+                </div>
+                
+                <div class="snb__item col">
+                    <i class="fas fa-user-friends "></i>
+                    <span>about us</span>
+                </div>
+            </div>
+        </div>
+            <div class="wrap-main col">
+                <div class="main col">
+                    <div class="main__tit row">
+                        <span>MC LIBRARY</span>
+                    </div>
+                    <div class="main__form row">
+                        <label class="main__form__label">search</label>
+                        <input class="main__form__inp"type="text" placeholder="enter your keyword">
+                        <button class="main__form__btn"type="submit">
+                            <i class="fas fa-search "></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="gnb row">
+                    <div class="gnb__item col">
+                        <i class="fas fa-search "></i>
+                        <span>search</span>
+                    </div>
+                    
+                    <div class="gnb__item col">
+                        <i class="fas fa-cart-plus "></i>
+                        <span>cart</span>
+                    </div>
+                    
+                    <div class="gnb__item col">
+                        <i class="far fa-clipboard "></i>
+                         <span>notice</span>
+                    </div>
+                    
+                    <div class="gnb__item col">
+                        <i class="fas fa-user-friends "></i>
+                        <span>about us</span>
+                    </div>                  
+                </div>
+            </div>
+                
+                <div class="wrap__books col">
+                    <div class="book-cate__tit row">
+                        <span class="font-xxl--b">인기 도서</span>
+                    </div>
+                    <div class="books row">
+                        <div class="book col">
+                            <img class="book__img"src="./resources/image/bookmanager_nudge.jpg">
+                            <span>NUDGE</span>
+                        </div>
+                        <div class="book col">
+                            <img class="book__img"src="./resources/image/bookmanager_nudge.jpg">
+                            <span>NUDGE</span>
+                        </div>
+                        <div class="book col">
+                            <img class="book__img"src="./resources/image/bookmanager_nudge.jpg">
+                            <span>NUDGE</span>
+                        </div>
+                        <div class="book col">
+                            <img class="book__img"src="./resources/image/bookmanager_nudge.jpg">
+                            <span>NUDGE</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wrap__books col">
+                    <div class="book-cate__tit row">
+                        <span class="font-xxl--b">스테디셀러</span>
+                    </div>
+                    <div class="books row">
+                        <div class="book col">
+                            <img class="book__img"src="./resources/image/bookmanager_nudge.jpg">
+                            <span>NUDGE</span>
+                        </div>
+                        <div class="book col">
+                            <img class="book__img"src="./resources/image/bookmanager_nudge.jpg">
+                            <span>NUDGE</span>
+                        </div>
+                        <div class="book col">
+                            <img class="book__img"src="./resources/image/bookmanager_nudge.jpg">
+                            <span>NUDGE</span>
+                        </div>
+                        <div class="book col">
+                            <img class="book__img"src="./resources/image/bookmanager_nudge.jpg">
+                            <span>NUDGE</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wrap__books col">
+                    <div class="book-cate__tit row">
+                        <span class="font-xxl--b">신간도서</span>
+                    </div>
+                    <div class="books row">
+                        <div class="book col">
+                            <img class="book__img"src="./resources/image/bookmanager_nudge.jpg">
+                            <span>NUDGE</span>
+                        </div>
+                        <div class="book col">
+                            <img class="book__img"src="./resources/image/bookmanager_nudge.jpg">
+                            <span>NUDGE</span>
+                        </div>
+                        <div class="book col">
+                            <img class="book__img"src="./resources/image/bookmanager_nudge.jpg">
+                            <span>NUDGE</span>
+                        </div>
+                        <div class="book col">
+                            <img class="book__img"src="./resources/image/bookmanager_nudge.jpg">
+                            <span>NUDGE</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wrap__books col">
+                    <div class="book-cate__tit row">
+                        <span class="font-xxl--b">최근대출도서</span>
+                    </div>
+                    <div class="books row">
+                        <div class="book col">
+                            <img class="book__img"src="./resources/image/bookmanager_nudge.jpg">
+                            <span>NUDGE</span>
+                        </div>
+                        <div class="book col">
+                            <img class="book__img"src="./resources/image/bookmanager_nudge.jpg">
+                            <span>NUDGE</span>
+                        </div>
+                        <div class="book col">
+                            <img class="book__img"src="./resources/image/bookmanager_nudge.jpg">
+                            <span>NUDGE</span>
+                        </div>
+                        <div class="book col">
+                            <img class="book__img"src="./resources/image/bookmanager_nudge.jpg">
+                            <span>NUDGE</span>
+                        </div>
+                    </div>
+                </div>
+
+    <div class="footer">
+
+    </div>
+
+</body>
+</html>
